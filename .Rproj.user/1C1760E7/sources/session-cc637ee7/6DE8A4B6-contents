@@ -63,7 +63,7 @@ social:
    link: "http://lattes.cnpq.br/6600809862208281"
      
  - icon: linkedin
-   icon_pack : fab
+   icon_pack : ai
    link: "http://www.linkedin.com/in/danilobmedeiros"
    
   - icon: cv
