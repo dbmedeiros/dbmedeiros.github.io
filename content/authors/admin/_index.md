@@ -52,23 +52,20 @@ social:
 
  - icon : google-scholar
    icon_pack : ai
-   link : "https://scholar.google.com/citations?user:SErgSUYAAAAJ&hl:en"
+   link : https://scholar.google.com/citations?user:SErgSUYAAAAJ&hl:en
 
  - icon: orcid
    icon_pack : ai
-   link: "https://orcid.org/0000-0003-1642-5444"
+   link: https://orcid.org/0000-0003-1642-5444
 
  - icon: lattes
    icon_pack : ai
-   link: "http://lattes.cnpq.br/6600809862208281"
+   link: http://lattes.cnpq.br/6600809862208281
      
  - icon: linkedin
-   icon_pack : brands
-   link: "http://www.linkedin.com/in/danilobmedeiros"
+   icon_pack : fab
+   link: http://www.linkedin.com/in/danilobmedeiros
    
-  - icon: cv
-    icon_pack: ai
-    link: "uploads/resume.pdf""
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
