@@ -37,7 +37,7 @@ education:
       institution: University of Sao Paulo
       year: 2013
     - course: BA in Social Sciences
-      institution: University of Sao Pauloy
+      institution: University of Sao Paulo
       year: 2009
 
 
@@ -70,8 +70,6 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-
-Welcome!
 
 I am an Assistant Professor of Political Science at the Federal University of Minas Gerais (UFMG). Formerly, I was an Adjunct Professor at Getulio Vargas Foundation's Sao Paulo School of Economics (EESP-FGV), and  aPostdoctoral Fellow at the Brazilian Center for Analysis and Planning (CEBRAP).
 
