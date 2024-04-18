@@ -59,11 +59,11 @@ social:
    link: "https://orcid.org/0000-0003-1642-5444"
 
  - icon: lattes
-   icon_pack : brands
+   icon_pack : ai
    link: "http://lattes.cnpq.br/6600809862208281"
      
  - icon: linkedin
-   icon_pack : ai
+   icon_pack : brands
    link: "http://www.linkedin.com/in/danilobmedeiros"
    
   - icon: cv
