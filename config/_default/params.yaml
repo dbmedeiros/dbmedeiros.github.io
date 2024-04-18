@@ -6,12 +6,10 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
-  font: minimal
+  theme_day: forest
+  theme_night: forest
+  font: forest
   font_size: M
-  mode: light
-  color: red
 
 # SEO
 
