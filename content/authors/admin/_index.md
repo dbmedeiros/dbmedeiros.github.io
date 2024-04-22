@@ -23,8 +23,9 @@ bio: ''
 # Interests to show in About widget
 interests:
   - Legislative Studies
-  - Brazilian Politics
+  - Political Economy
   - Constitution-Making
+  - Brazilian Politics
   - Political Methodology
 
 # Education to show in About widget
@@ -71,7 +72,7 @@ social:
 highlight_name: true
 ---
 
-I am an Assistant Professor of Political Science at the Federal University of Minas Gerais (UFMG). Formerly, I was an Adjunct Professor at Getulio Vargas Foundation's Sao Paulo School of Economics (EESP-FGV), and  aPostdoctoral Fellow at the Brazilian Center for Analysis and Planning (CEBRAP).
+I am an Assistant Professor at the Department of  Political Science at the Federal University of Minas Gerais (UFMG) and the coordinator of the Political Institutions and Elections research group at the Brazilian Center for Analysis and Planning (CEBRAP).
 
 My main line of research explores the responses offered by legislators to pressures from voters and parties. My work examines crucial moments in the history of the Brazilian democracy in order to advance understanding of political actors' choices and decisions when long term consequences are at stake.
 {style="text-align: justify;"}
