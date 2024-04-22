@@ -35,10 +35,10 @@ education:
       institution: University of Virginia
       year: 2019
     - course: MA in Political Science
-      institution: University of Sao Paulo
+      institution: University of São Paulo
       year: 2013
     - course: BA in Social Sciences
-      institution: University of Sao Paulo
+      institution: University of São Paulo
       year: 2009
 
 
@@ -71,8 +71,7 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
+I am an Assistant Professor in the Department of Political Science at the Federal University of Minas Gerais (UFMG) and the coordinator of the Political Institutions and Elections research group at the Brazilian Center for Analysis and Planning (CEBRAP).
 
-I am an Assistant Professor at the Department of  Political Science at the Federal University of Minas Gerais (UFMG) and the coordinator of the Political Institutions and Elections research group at the Brazilian Center for Analysis and Planning (CEBRAP).
-
-My main line of research explores the responses offered by legislators to pressures from voters and parties. My work examines crucial moments in the history of the Brazilian democracy in order to advance understanding of political actors' choices and decisions when long term consequences are at stake.
+My primary area of research explores how legislators respond to pressures from voters and parties. I examine pivotal moments in Brazilian democracy to deepen our understanding of political actors' choices and decisions when long-term consequences are at stake.
 {style="text-align: justify;"}
