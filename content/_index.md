@@ -39,14 +39,14 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Welcome!
+      # title: Welcome!
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
  
   - block: collection
     id: research
     content:
-      title: Research
+      title: Publications
       filters:
         folders:
           - publication
