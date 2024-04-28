@@ -1,5 +1,5 @@
 ---
-title: Government and Opposition in Legislative Speechmaking: Using Text-As-Data to Estimate Brazilian"" Political Parties’ Policy Positions
+title: Government and Opposition in Legislative Speechmaking: Using Text-As-Data to Estimate Brazilian Political Parties’ Policy Positions
 authors: 
 - Mauricio Y. Izumi
 - Danilo Medeiros
