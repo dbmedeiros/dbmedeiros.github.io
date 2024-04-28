@@ -1,5 +1,5 @@
 ---
-title: Government and Congress
+title: 'Government and Congress'
 authors:
 - Fernando Limongi
 - Andréa Freitas

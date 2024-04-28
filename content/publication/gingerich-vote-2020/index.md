@@ -1,5 +1,5 @@
 ---
-title: Vote Secrecy With Diverse Voters
+title: 'Vote Secrecy With Diverse Voters'
 authors:
 - Daniel W. Gingerich
 - Danilo Medeiros
