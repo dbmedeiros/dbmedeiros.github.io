@@ -23,9 +23,9 @@ bio: ''
 # Interests to show in About widget
 interests:
   - Legislative Studies
+  - Brazilian Politics
   - Political Economy
   - Constitution-Making
-  - Brazilian Politics
   - Political Methodology
 
 # Education to show in About widget
@@ -71,7 +71,10 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am an Assistant Professor in the Department of Political Science at the Federal University of Minas Gerais (UFMG) and the coordinator of the Political Institutions and Elections research group at the Brazilian Center for Analysis and Planning (CEBRAP).
+I am an Assistant Professor in the Department of Political Science at the [Federal University of Minas Gerais](https://www.fafich.ufmg.br/) (UFMG) and the coordinator of the Political Institutions and Elections research group at the [Brazilian Center for Analysis and Planning](https://cebrap.org.br/) (CEBRAP).
 
 My primary area of research explores how legislators respond to pressures from voters and parties. I examine pivotal moments in Brazilian democracy to deepen our understanding of political actors' choices and decisions when long-term consequences are at stake.
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/cv_danilomedeiros.pdf" "newtab" >}}curriculum vitae{{< /staticref >}}.
+
 {style="text-align: justify;"}
