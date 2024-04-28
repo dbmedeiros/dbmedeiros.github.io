@@ -10,11 +10,11 @@ last_name: Medeiros
 superuser: true
 
 # Role/position/tagline
-role: Assistant Professor of Political Science
+role: Assistant Professor in the Department of Political Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Federal University of Minas Gerais (UFMG)
+  - name: Federal University of Minas Gerais
     url: https://www.fafich.ufmg.br/
 
 # Short bio (displayed in user profile at end of posts)
