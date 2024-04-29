@@ -52,6 +52,6 @@ sections:
           - publication
     design:
       columns: '2'
-      view: compact
+      view: list
     
 ---
