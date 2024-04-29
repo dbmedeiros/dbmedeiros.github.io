@@ -5,11 +5,11 @@ authors:
 - Andréa Freitas
 - Danilo Medeiros
 - Joyce Luz
-date: '2022-01-01'
+date: '2022-02-01'
 publishDate: '2024-04-18T17:07:34.524299Z'
 publication_types:
 - article-journal
-publication: '*Brazil under Bolsonaro. How endangered is democracy?*'
+publication: '*Brazil under Bolsonaro. How endangered is democracy (Ibero-Online.de)?*'
 links:
 - name: URL
   url: https://publications.iai.spk-berlin.de/receive/iai_mods_00000131

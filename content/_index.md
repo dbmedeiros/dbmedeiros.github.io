@@ -49,9 +49,20 @@ sections:
       title: Journal Articles
       filters:
         folders:
-          - publication
+          - journalarticles
     design:
       columns: '2'
-      view: list
+      view: compact
+      
+  - block: collection
+    id: research
+    content:
+      title: Book Sections
+      filters:
+        folders:
+          - booksections
+    design:
+      columns: '2'
+      view: compact
     
 ---
