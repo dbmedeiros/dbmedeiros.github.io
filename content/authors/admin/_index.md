@@ -10,7 +10,7 @@ last_name: Medeiros
 superuser: true
 
 # Role/position/tagline
-role: Assistant Professor in the Department of Political Science
+role: Assistant Professor of Political Science
 
 # Organizations/Affiliations to show in About widget
 organizations:

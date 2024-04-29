@@ -46,7 +46,7 @@ sections:
   - block: collection
     id: research
     content:
-      title: Publications
+      title: Journal Articles
       filters:
         folders:
           - publication
