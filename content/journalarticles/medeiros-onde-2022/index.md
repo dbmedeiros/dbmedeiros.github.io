@@ -1,5 +1,5 @@
 ---
-title: Onde está a Polarização Política no Brasil?
+title: 'Onde está a Polarização Política no Brasil?'
 authors:
 - Danilo Medeiros
 date: '2022-05-11'
@@ -11,4 +11,6 @@ abstract: A política brasileira contemporânea é frequentemente definida por a
 links:
 - name: URL
   url: https://www.kas.de/documents/265553/265602/KA+Cad+2022.1+-+cap%C3%ADtulo+2+vf.pdf/d8e32c39-db5a-9695-b931-c362e92686d7?t=1652375381805
+image:
+  preview_only: true
 ---
