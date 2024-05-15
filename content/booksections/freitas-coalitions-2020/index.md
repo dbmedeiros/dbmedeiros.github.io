@@ -4,7 +4,7 @@ authors:
 - Andréa Freitas
 - Maurício Izumi
 - Danilo Medeiros
-date: '2022-07-01'
+date: '2020-12-01'
 publishDate: '2024-04-18T17:07:34.502037Z'
 publication_types:
 - chapter
