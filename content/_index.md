@@ -43,25 +43,15 @@ sections:
       username: admin
  
   - block: collection
-    id: publications
+    id: research
     content:
-      title: Journal Articles
+      title: Research
       filters:
         folders:
-          - journalarticles
+          - research
     design:
       columns: '2'
       view: compact
       
-  - block: collection
-    id: publications
-    content:
-      title: Book Sections
-      filters:
-        folders:
-          - booksections
-    design:
-      columns: '2'
-      view: compact
     
 ---
