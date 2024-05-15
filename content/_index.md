@@ -52,7 +52,7 @@ sections:
           - journalarticles
     design:
       columns: '2'
-      view: list
+      view: compact
       
   - block: collection
     id: research
@@ -63,6 +63,6 @@ sections:
           - booksections
     design:
       columns: '2'
-      view: list
+      view: compact
     
 ---
