@@ -6,9 +6,9 @@
 # Appearance
 
 appearance:
-  theme_day: cyberpunk
-  theme_night: cyberpunk
-  font: cyberpunk
+  theme_day: strawberry
+  theme_night: strawberry
+  font: strawberry
   font_size: M
 
 # SEO
