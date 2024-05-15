@@ -43,7 +43,7 @@ sections:
       username: admin
  
   - block: collection
-    id: research
+    id: publications
     content:
       title: Journal Articles
       filters:
@@ -54,7 +54,7 @@ sections:
       view: compact
       
   - block: collection
-    id: research
+    id: publications
     content:
       title: Book Sections
       filters:

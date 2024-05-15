@@ -9,7 +9,7 @@ main:
     weight: 10
 
   - name: Publications
-    url: '#research'
+    url: '#publications'
     weight: 20
 
 # Link to a PDF of your resume/CV from the menu.

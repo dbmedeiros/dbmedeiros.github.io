@@ -6,9 +6,9 @@
 # Appearance
 
 appearance:
-  theme_day: 1950s
-  theme_night: 1950s
-  font: 1950s
+  theme_day: strawberry
+  theme_night: strawberry
+  font: strawberry
   font_size: M
 
 # SEO
