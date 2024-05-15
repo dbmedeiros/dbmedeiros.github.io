@@ -6,9 +6,9 @@
 # Appearance
 
 appearance:
-  theme_day: strawberry
-  theme_night: strawberry
-  font: strawberry
+  theme_day: dark
+  theme_night: dark
+  font: dark
   font_size: M
 
 # SEO

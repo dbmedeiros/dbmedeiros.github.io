@@ -51,7 +51,7 @@ sections:
           - publication
     design:
       columns: '2'
-      view: card
+      view: compact
       
     
 ---
