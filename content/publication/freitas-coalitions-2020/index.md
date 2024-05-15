@@ -24,4 +24,5 @@ abstract: This study aims to understand the behavior of Brazilian Deputies and S
   our aim to shed light on preference aggregation and the impact of government coalition
   participation. We outline our methodology, discuss the dimensionality issue, evaluate
   the coalition's influence on legislative behavior, and conclude with final remarks.
+url_pdf: uploads/Freitas_ Izumi_Medeiros_capitulolivro.pdf
 ---
