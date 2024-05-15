@@ -48,7 +48,7 @@ sections:
       title: Research
       filters:
         folders:
-          - research
+          - publication
     design:
       columns: '2'
       view: compact
