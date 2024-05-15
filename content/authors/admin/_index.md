@@ -15,7 +15,6 @@ role: Assistant Professor of Political Science
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Federal University of Minas Gerais
-    url: https://www.fafich.ufmg.br/
 
 # Short bio (displayed in user profile at end of posts)
 bio: ''
