@@ -3,59 +3,49 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Helvetica, Arial, sans-serif;
-  background-color: #F5F7FA;
-  color: #1a1a1a;
+  background-color: #f8fafc;
+  color: #1f2937;
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-/* ===== HOME LAYOUT ===== */
+/* ===== LAYOUT ===== */
 
 .layout {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1400px;
-  margin: 70px auto;
+  max-width: 1350px;
+  margin: 80px auto;
   padding: 0 80px;
-  gap: 120px;
+  gap: 100px;
 }
 
 .left-column {
-  width: 340px;
+  width: 320px;
+  padding-right: 60px;
+  border-right: 1px solid #e5e7eb;
 }
 
 .right-column {
   flex: 1;
-  max-width: 850px;
+  max-width: 820px;
 }
+
+/* ===== IMAGE ===== */
 
 .profile img {
-  width: 220px;
-  border-radius: 12px;   /* quadrado elegante em vez de círculo */
-  border: 3px solid #003366;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-h1 {
-  font-size: 34px;
-  margin-top: 20px;
-  margin-bottom: 6px;
-}
-
-.research-text {
-  font-size: 20px;
-  line-height: 1.85;
-  margin-top: 0;
+  width: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
 /* ===== TYPOGRAPHY ===== */
 
 h1 {
-  font-size: 32px;
-  margin-top: 25px;
-  margin-bottom: 8px;
-  color: #003366;
+  font-size: 30px;
+  margin: 20px 0 6px 0;
+  color: #002F6C;  /* azul UFMG profundo */
+  font-weight: 600;
 }
 
 .position {
@@ -64,26 +54,26 @@ h1 {
 }
 
 .institution {
-  color: #555;
+  color: #6b7280;
   margin-bottom: 20px;
 }
 
 .research-text {
-  font-size: 19px;
-  line-height: 1.8;
-  margin-top: 50px;
+  font-size: 20px;
+  line-height: 1.9;
+  margin-top: 0;
 }
 
-/* ===== LINKS / ICONS ===== */
+/* ===== LINKS ===== */
 
 .links {
-  margin: 20px 0;
+  margin-top: 25px;
 }
 
 .links a {
   margin-right: 18px;
   font-size: 20px;
-  color: #003366;
+  color: #002F6C;
   text-decoration: none;
 }
 
@@ -91,14 +81,20 @@ h1 {
   color: #C8A24A;
 }
 
+.lattes-icon {
+  width: 22px;
+  vertical-align: middle;
+}
+
 /* ===== MENU ===== */
 
 .menu {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .menu a {
-  margin-right: 20px;
+  display: block;
+  margin-bottom: 10px;
   font-weight: 600;
   color: #0055A4;
   text-decoration: none;
@@ -108,90 +104,27 @@ h1 {
   text-decoration: underline;
 }
 
-/* ===== PUBLICATIONS PAGE ===== */
-
-.pub-container {
-  max-width: 1100px;
-  margin: 90px auto;
-  padding: 0 60px;
-}
-
-.pub-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.pub-header h1 {
-  margin: 0;
-}
-
-.pub-header a {
-  text-decoration: none;
-  color: #0055A4;
-}
-
-.pub {
-  margin-bottom: 40px;
-}
-
-.pub p {
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-.pub-links {
-  margin-top: 6px;
-}
-
-.pub-links a {
-  margin-right: 18px;
-  font-size: 15px;
-  color: #0055A4;
-  text-decoration: none;
-}
-
-.pub-links a:hover {
-  text-decoration: underline;
-}
-
-h2 {
-  color: #003366;
-  border-bottom: 2px solid #C8A24A;
-  padding-bottom: 5px;
-  margin-top: 70px;
-  margin-bottom: 25px;
-}
-
 /* ===== FOOTER ===== */
 
 footer {
   text-align: center;
-  margin: 80px 0 40px 0;
+  margin: 70px 0 40px 0;
   font-size: 14px;
-  color: #777;
+  color: #9ca3af;
 }
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .layout {
     flex-direction: column;
+    padding: 0 40px;
     gap: 50px;
-    padding: 0 30px;
   }
 
-  .left-column,
-  .right-column {
+  .left-column {
+    border-right: none;
+    padding-right: 0;
     width: 100%;
-  }
-
-  .research-text {
-    margin-top: 0;
-  }
-
-  .pub-container {
-    padding: 0 30px;
   }
 }
