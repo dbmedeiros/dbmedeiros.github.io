@@ -128,3 +128,69 @@ h1 {
     width: 200px;
   }
 }
+
+/* ========================= */
+/* PUBLICATIONS PAGE STYLE  */
+/* ========================= */
+
+.pub-page {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 0 60px;
+}
+
+.pub-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.pub-top h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+.back {
+  color: #2563EB;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.pub-page h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #7C3AED;
+}
+
+.pub-item {
+  margin-bottom: 28px;
+}
+
+.pub-item p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.pub-links {
+  margin-top: 6px;
+}
+
+.pub-links a {
+  margin-right: 14px;
+  font-size: 14px;
+  color: #2563EB;
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
