@@ -1,0 +1,73 @@
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 25px;
+  line-height: 1.75;
+  font-size: 18px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.position,
+.institution {
+  margin: 0;
+  color: #444;
+}
+
+.contact {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 55px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.publications li {
+  margin-bottom: 14px;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+footer {
+  margin-top: 80px;
+  font-size: 14px;
+  color: #777;
+}
