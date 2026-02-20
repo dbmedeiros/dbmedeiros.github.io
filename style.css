@@ -84,3 +84,20 @@ footer {
   font-size: 14px;
   color: #777;
 }
+
+/* Publications */
+
+.pub {
+  margin-bottom: 30px;
+}
+
+.pub-links a {
+  margin-right: 15px;
+  font-size: 15px;
+  color: #0055A4;
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
