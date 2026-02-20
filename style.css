@@ -101,3 +101,87 @@ footer {
 .pub-links a:hover {
   text-decoration: underline;
 }
+
+/* ===== LAYOUT TWO COLUMNS ===== */
+
+.layout {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 40px;
+}
+
+.left-column {
+  width: 380px;
+}
+
+.right-column {
+  flex: 1;
+  max-width: 650px;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid #003366;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 25px;
+  color: #003366;
+}
+
+.position {
+  font-weight: 500;
+  color: #0055A4;
+}
+
+.institution {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.research-text {
+  font-size: 19px;
+  line-height: 1.8;
+  margin-top: 60px;
+}
+
+.menu {
+  margin-top: 40px;
+}
+
+.menu a {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 600;
+  color: #0055A4;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px auto;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .research-text {
+    margin-top: 0;
+  }
+}
