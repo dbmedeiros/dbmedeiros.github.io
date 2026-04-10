@@ -2,65 +2,513 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Danilo B. Medeiros</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danilo B. Medeiros — Political Scientist</title>
+  <meta name="description" content="Assistant Professor of Political Science at UFMG. Research on legislative politics, coalition presidentialism, and constitutional change in Brazil and Latin America.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    :root {
+      --navy:   #0d1b2a;
+      --navy2:  #1a2e42;
+      --blue:   #185FA5;
+      --blue-l: #d6e8f7;
+      --sand:   #f5f0e8;
+      --sand2:  #ede7da;
+      --ink:    #1c1c1c;
+      --muted:  #5a5a5a;
+      --faint:  #9a9a9a;
+      --rule:   #e0d9cf;
+      --serif:  'Lora', Georgia, serif;
+      --sans:   'DM Sans', system-ui, sans-serif;
+      --radius: 10px;
+      --max:    820px;
+    }
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    html { scroll-behavior: smooth; }
 
-  <!-- Icons -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    body {
+      font-family: var(--sans);
+      background: var(--sand);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245, 240, 232, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 28px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13.5px;
+      font-weight: 400;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--ink); }
+
+    /* ── MAIN ── */
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      display: grid;
+      grid-template-columns: 148px 1fr;
+      gap: 52px;
+      align-items: start;
+      padding: 72px 0 60px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-photo {
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--sand2);
+      box-shadow: 0 0 0 1px var(--rule);
+      display: block;
+    }
+
+    .hero-photo-placeholder {
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      background: var(--navy2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif);
+      font-size: 40px;
+      color: #fff;
+      letter-spacing: -0.02em;
+      border: 3px solid var(--sand2);
+    }
+
+    .hero-eyebrow {
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+
+    .hero-name {
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .hero-role {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .hero-bio {
+      font-size: 15px;
+      color: var(--ink);
+      line-height: 1.78;
+      max-width: 520px;
+      margin-bottom: 28px;
+    }
+
+    /* Research chips */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      background: var(--sand2);
+      color: var(--muted);
+      border: 1px solid var(--rule);
+      padding: 5px 13px;
+      border-radius: 999px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .chip:hover {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    /* CTA buttons */
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .btn-primary:hover { background: var(--navy2); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--rule);
+    }
+
+    .btn-outline:hover { border-color: var(--navy); color: var(--navy); }
+
+    /* ── SECTION ── */
+    .rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 0;
+    }
+
+    .section {
+      padding: 52px 0;
+      animation: fadeUp 0.6s ease both;
+      animation-delay: 0.1s;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    .see-all {
+      font-size: 13px;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.15s;
+    }
+
+    .see-all:hover { opacity: 0.7; }
+
+    /* ── PUBLICATION ITEMS ── */
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .pub-item:last-child { border-bottom: none; }
+
+    .pub-year {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--faint);
+      padding-top: 3px;
+      letter-spacing: 0.04em;
+    }
+
+    .pub-body {}
+
+    .pub-tag {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: var(--blue-l);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .pub-tag.book { color: #6B4226; background: #f5e6d5; }
+    .pub-tag.accepted { color: #1a6e3c; background: #d6f5e3; }
+
+    .pub-title {
+      font-family: var(--serif);
+      font-size: 15.5px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+
+    .pub-venue {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .pub-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .pub-link {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: opacity 0.15s;
+    }
+
+    .pub-link:hover { opacity: 0.7; }
+
+    .pub-link::before {
+      content: '↗';
+      font-size: 11px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 28px;
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-left {
+      font-size: 13px;
+      color: var(--faint);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--ink); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 48px 0 40px;
+      }
+      .hero-photo, .hero-photo-placeholder { width: 100px; height: 100px; font-size: 28px; }
+      .hero-name { font-size: 28px; }
+      .nav-links { gap: 20px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="page">
+  <header>
+    <nav>
+      <a class="nav-logo" href="index.html">Danilo B. Medeiros</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="cv.pdf" target="_blank">CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="left">
+  <main>
 
-    <img src="img/profile.jpg" alt="Danilo B. Medeiros" class="profile-pic">
+    <!-- HERO -->
+    <section class="hero">
+      <img
+        class="hero-photo"
+        src="img/profile.jpg"
+        alt="Danilo B. Medeiros"
+        onerror="this.outerHTML='<div class=\'hero-photo-placeholder\'>DM</div>'"
+      >
 
-    <h1>Danilo B. Medeiros</h1>
+      <div>
+        <p class="hero-eyebrow">Political Scientist · UFMG</p>
+        <h1 class="hero-name">Danilo B.<br>Medeiros</h1>
+        <p class="hero-role">
+          Assistant Professor of Political Science<br>
+          Federal University of Minas Gerais, Brazil
+        </p>
 
-    <p class="meta">
-      Assistant Professor of Political Science<br>
-      Federal University of Minas Gerais (UFMG), Brazil
-    </p>
+        <p class="hero-bio">
+          I study political institutions, legislative politics, coalition presidentialism,
+          and constitutional change in Brazil and Latin America. My work combines
+          quantitative methods, text-as-data approaches, and comparative institutional
+          analysis to explain how political actors structure competition and policy-making.
+        </p>
 
-    <div class="links">
-      <a href="mailto:danilomedeiros@ufmg.br"><i class="fa-solid fa-envelope"></i></a>
-      <a href="http://lattes.cnpq.br/6600809862208281" target="_blank"><i class="fa-solid fa-id-card"></i></a>
-      <a href="https://scholar.google.com/citations?user=SErgSUYAAAAJ&hl=pt-BR" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
-      <a href="https://github.com/dbmedeiros" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://orcid.org/0000-0003-1642-5444" target="_blank"><i class="fa-brands fa-orcid"></i></a>
-      <a href="https://www.linkedin.com/in/danilobmedeiros/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="chips">
+          <span class="chip">Legislative Politics</span>
+          <span class="chip">Coalition Presidentialism</span>
+          <span class="chip">Text-as-Data</span>
+          <span class="chip">Constitutional Change</span>
+          <span class="chip">Latin America</span>
+          <span class="chip">Brazil</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="publications.html">Publications</a>
+          <a class="btn btn-outline" href="cv.pdf" target="_blank">Curriculum Vitae ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- RECENT PUBLICATIONS -->
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Recent publications</h2>
+        <a class="see-all" href="publications.html">See all →</a>
+      </div>
+
+      <div class="pub-list">
+
+        <div class="pub-item">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <span class="pub-tag accepted">Accepted</span>
+            <p class="pub-title">Partisan and Nonpartisan Models of Constitution-Making</p>
+            <p class="pub-venue"><em>Journal of Politics in Latin America</em> · with Rodolfo de Camargo Lima</p>
+            <div class="pub-links">
+              <a class="pub-link" href="#">Abstract</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <span class="pub-tag">Article</span>
+            <p class="pub-title">Onde está a Polarização Política no Brasil?</p>
+            <p class="pub-venue"><em>Cadernos Adenauer</em></p>
+            <div class="pub-links">
+              <a class="pub-link" href="#">Abstract</a>
+              <a class="pub-link" href="papers/polarization.pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-year">2021</span>
+          <div class="pub-body">
+            <span class="pub-tag">Article</span>
+            <p class="pub-title">Government and Opposition in Legislative Speechmaking</p>
+            <p class="pub-venue"><em>Latin American Politics and Society</em> · with Maurício Izumi</p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://doi.org/10.1017/lap.2020.20" target="_blank">Abstract</a>
+              <a class="pub-link" href="papers/speechmaking.pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-left">dbmedeiros@ufmg.br &nbsp;·&nbsp; Belo Horizonte, Brazil</span>
+    <div class="footer-links">
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      <a href="https://orcid.org" target="_blank">ORCID</a>
+      <a href="https://github.com/dbmedeiros" target="_blank">GitHub</a>
     </div>
-
-    <div class="cta">
-      <a href="publications.html" class="primary">Publications</a>
-      <a href="cv.pdf" target="_blank" class="secondary">Curriculum Vitae</a>
-    </div>
-
-  </div>
-
-  <div class="right">
-
-    <p class="lead">
-      I study political institutions, legislative politics,
-      coalition presidentialism, and constitutional change
-      in Brazil and Latin America. My work combines quantitative
-      methods, text-as-data approaches, and comparative institutional
-      analysis to explain how political actors structure competition
-      and policy-making.
-    </p>
-
-  </div>
-
-</div>
+  </footer>
 
 </body>
 </html>
