@@ -177,7 +177,8 @@
       margin-bottom: 8px;
     }
 
-    .pub-tag.book { color: #6B4226; background: #f5e6d5; }
+    .pub-tag.book        { color: #6B4226; background: #f5e6d5; }
+    .pub-tag.forthcoming { color: #6B4226; background: #f5e6d5; font-style: italic; }
 
     .pub-title {
       font-family: var(--serif);
@@ -208,6 +209,7 @@
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .pub-link {
@@ -223,6 +225,56 @@
 
     .pub-link:hover { opacity: 0.7; }
     .pub-link::before { content: '↗'; font-size: 11px; }
+
+    /* ── ABSTRACT TOGGLE ── */
+    .abstract-btn {
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 5px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+      padding: 3px 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: border-color 0.15s, color 0.15s;
+      line-height: 1.6;
+    }
+
+    .abstract-btn:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .abstract-btn .chevron {
+      font-size: 9px;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    .abstract-btn[aria-expanded="true"] .chevron {
+      transform: rotate(180deg);
+    }
+
+    .abstract-box {
+      display: none;
+      margin-top: 14px;
+      padding: 16px 18px;
+      background: var(--sand2);
+      border-left: 3px solid var(--blue);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .abstract-box.open { display: block; }
+
+    .abstract-box p {
+      font-size: 13.5px;
+      color: var(--ink);
+      line-height: 1.75;
+    }
 
     /* ── FOOTER ── */
     footer {
@@ -288,6 +340,7 @@
       <p class="section-label">Peer-reviewed articles</p>
       <div class="pub-list">
 
+        <!-- JPLA 2026 -->
         <div class="pub-item">
           <span class="pub-year">2026</span>
           <div>
@@ -296,23 +349,37 @@
             <p class="pub-venue"><em>Journal of Politics in Latin America</em> &mdash; with Rodolfo de Camargo Lima</p>
             <div class="pub-links">
               <a class="pub-link" href="https://doi.org/10.1177/1866802X251397954" target="_blank">Download</a>
+              <button class="abstract-btn" aria-expanded="false" onclick="toggleAbstract(this)">
+                Abstract <span class="chevron">▼</span>
+              </button>
+            </div>
+            <div class="abstract-box">
+              <p>This paper compares Brazil's (1987–1988) National Constituent Assembly and Chile's (2021–2022) Constitutional Convention to examine how partisanship and institutional design shape constitution-making outcomes. Brazil's party-based assembly, despite internal ideological heterogeneity, achieved an accepted constitution through structured negotiation and leadership mechanisms. Meanwhile, Chile's nonpartisan convention faced fragmentation among independent constituents, had limited coordination tools, and ultimately produced a draft rejected by referendum. Drawing on a qualitative comparative case approach, roll-call analysis, and matching techniques, we show that partisan infrastructure can mitigate negotiation challenges by fostering compromise. In contrast, nonpartisan assemblies may enhance inclusiveness but risk fragmentation and instability without robust coordination mechanisms that bridge internal divisions. These findings challenge the presumed superiority of nonpartisan conventions, demonstrating the importance of party-based institutional frameworks for managing collective action problems in constitution-making.</p>
             </div>
           </div>
         </div>
 
+        <!-- Cadernos Adenauer 2022 -->
         <div class="pub-item">
           <span class="pub-year">2022</span>
           <div>
             <span class="pub-tag">Article</span>
             <p class="pub-title">Onde está a Polarização Política no Brasil?</p>
-            <p class="pub-title-translation">Where Is Political Polarization in Brazil?</p>
+            <p class="pub-title-translation">Where Can Political Polarization Be Found in Brazil?</p>
             <p class="pub-venue"><em>Cadernos Adenauer</em></p>
             <div class="pub-links">
-              <a class="pub-link" href="papers/polarization.pdf">Download</a>
+              <a class="pub-link" href="https://www.kas.de/documents/265553/265602/KA+Cad+2022.1+-+cap%C3%ADtulo+2+vf.pdf/d8e32c39-db5a-9695-b931-c362e92686d7?t=1652375381805" target="_blank">Download</a>
+              <button class="abstract-btn" aria-expanded="false" onclick="toggleAbstract(this)">
+                Abstract <span class="chevron">▼</span>
+              </button>
+            </div>
+            <div class="abstract-box">
+              <p>Contemporary Brazilian politics is frequently described as "polarized" by academics, journalists, commentators, and the general public. This term often implies a crisis and dysfunctionality, similar to descriptions of other democracies. But what exactly does political polarization entail? Is it occurring only among the electorate, or also within parties and among parliamentarians? How has this phenomenon developed in Brazil and other countries? This essay aims to answer these questions and contribute to the discussion about the interaction between the preferences and interests of representatives and those they represent. To this end, I provide an overview of the literature and present data specific to the Brazilian case. Finally, I discuss the possible impacts of polarization on the 2022 elections and the future of democracy.</p>
             </div>
           </div>
         </div>
 
+        <!-- LAPS 2021 -->
         <div class="pub-item">
           <span class="pub-year">2021</span>
           <div>
@@ -323,10 +390,17 @@
               <a class="pub-link" href="https://doi.org/10.1017/lap.2020.36" target="_blank">Download</a>
               <a class="pub-link" href="https://doi.org/10.1017/lap.2021.66" target="_blank">Corrigendum</a>
               <a class="pub-link" href="papers/speechmaking.pdf">PDF</a>
+              <button class="abstract-btn" aria-expanded="false" onclick="toggleAbstract(this)">
+                Abstract <span class="chevron">▼</span>
+              </button>
+            </div>
+            <div class="abstract-box">
+              <p>This research note explores whether the government-opposition dimension that emerges from voting records of Brazilian legislatures also arises in legislative speechmaking. Since the earlier stages of the legislative process are innocuous to policy outcomes, party leaders would have fewer incentives to coerce their copartisans' behavior in speeches than in roll calls. To test this expectation, this study estimates Brazilian political parties' policy positions, relying on a sentiment analysis approach to classify 64,000 senators' speeches. The results suggest that the president and the party leadership exert significant influence not only over how legislators vote but also over how they speak. We speculate that these unforeseen findings are backed by the decisiveness of speeches in passing legislation, the importance leadership gives to party brand, and legislators' need to signal their positions to leaders and the government.</p>
             </div>
           </div>
         </div>
 
+        <!-- CPS 2020 -->
         <div class="pub-item">
           <span class="pub-year">2020</span>
           <div>
@@ -336,6 +410,12 @@
             <div class="pub-links">
               <a class="pub-link" href="http://dx.doi.org/10.1177/0010414019859040" target="_blank">Download</a>
               <a class="pub-link" href="papers/vote_secrecy.pdf">PDF</a>
+              <button class="abstract-btn" aria-expanded="false" onclick="toggleAbstract(this)">
+                Abstract <span class="chevron">▼</span>
+              </button>
+            </div>
+            <div class="abstract-box">
+              <p>Why would incumbent politicians adopt the secret ballot when doing so weakens the advantages of incumbency? Why is the secret ballot considered a democratizing reform in some settings, whereas in others it is associated with democratic backsliding? We provide theory and empirics to address these questions. Our starting point is the observation that the secret ballot had two consequences. It reduced the capacity to monitor the vote, thereby dampening the efficacy of clientelism. Yet, depending on literacy and electoral rules, it could also narrow political participation. Recognizing this, we endogenize politicians' preferences over the secret ballot, concentrating on the role of their personal and constituency characteristics.</p>
             </div>
           </div>
         </div>
@@ -351,8 +431,8 @@
         <div class="pub-item">
           <span class="pub-year">2026</span>
           <div>
-            <span class="pub-tag book">Chapter</span>
-            <p class="pub-title">Legislatures</p>
+            <span class="pub-tag forthcoming">Forthcoming</span>
+            <p class="pub-title">Legislatures in Latin America</p>
             <p class="pub-venue">
               In Claudia Avellaneda, Ricardo Bello-Gomez &amp; Nathalie Mendez Mendez (eds.),
               <em>Handbook of Latin American Politics</em>.
@@ -426,13 +506,18 @@
   </main>
 
   <footer>
-    <span class="footer-left">dbmedeiros@ufmg.br &nbsp;·&nbsp; Belo Horizonte, Brazil</span>
+    <span class="footer-left"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5236303f3736373b203d211227343f357c3020">[email&#160;protected]</a> &nbsp;·&nbsp; Belo Horizonte, Brazil</span>
     <div class="footer-links">
       <a href="https://scholar.google.com/citations?user=SErgSUYAAAAJ&hl=pt-BR" target="_blank">Google Scholar</a>
       <a href="http://lattes.cnpq.br/6600809862208281" target="_blank">Lattes</a>
       <a href="https://orcid.org/0000-0003-1642-5444" target="_blank">ORCID</a>
       <a href="https://github.com/dbmedeiros" target="_blank">GitHub</a>
     </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    function toggleAbstract(btn) {
+      const box = btn.clos
   </footer>
 
 </body>
