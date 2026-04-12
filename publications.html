@@ -111,8 +111,8 @@
     .page-header p {
       font-size: 15px;
       color: var(--muted);
-      max-width: 460px;
-      line-height: 1.6;
+      max-width: 480px;
+      line-height: 1.65;
     }
 
     /* ── MAIN ── */
@@ -124,13 +124,13 @@
 
     /* ── SECTION ── */
     .section {
-      margin-bottom: 56px;
+      margin-bottom: 52px;
       animation: fadeUp 0.5s ease both;
     }
 
-    .section:nth-child(2) { animation-delay: 0.05s; }
-    .section:nth-child(3) { animation-delay: 0.1s; }
-    .section:nth-child(4) { animation-delay: 0.15s; }
+    .section:nth-child(1) { animation-delay: 0.05s; }
+    .section:nth-child(2) { animation-delay: 0.10s; }
+    .section:nth-child(3) { animation-delay: 0.15s; }
 
     .section-label {
       font-size: 11px;
@@ -177,8 +177,7 @@
       margin-bottom: 8px;
     }
 
-    .pub-tag.book    { color: #6B4226; background: #f5e6d5; }
-    .pub-tag.accepted { color: #1a6e3c; background: #d6f5e3; }
+    .pub-tag.book { color: #6B4226; background: #f5e6d5; }
 
     .pub-title {
       font-family: var(--serif);
@@ -186,7 +185,16 @@
       font-weight: 500;
       color: var(--ink);
       line-height: 1.45;
+      margin-bottom: 3px;
+    }
+
+    .pub-title-translation {
+      font-family: var(--serif);
+      font-size: 13px;
+      font-style: italic;
+      color: var(--faint);
       margin-bottom: 5px;
+      line-height: 1.4;
     }
 
     .pub-venue {
@@ -214,7 +222,6 @@
     }
 
     .pub-link:hover { opacity: 0.7; }
-
     .pub-link::before { content: '↗'; font-size: 11px; }
 
     /* ── FOOTER ── */
@@ -250,9 +257,9 @@
       main { padding: 0 20px 60px; }
       .pub-item { grid-template-columns: 1fr; gap: 6px; }
       .pub-year { padding-top: 0; }
-      footer { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
       nav { padding: 0 20px; }
       .nav-links { gap: 18px; }
+      footer { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
     }
   </style>
 </head>
@@ -271,7 +278,7 @@
 
   <div class="page-header">
     <h1>Publications</h1>
-    <p>Peer-reviewed articles, book chapters, and accepted work on legislative politics, presidentialism, and constitutional change.</p>
+    <p>Peer-reviewed articles and book chapters on legislative politics, presidentialism, and constitutional change.</p>
   </div>
 
   <main>
@@ -282,14 +289,26 @@
       <div class="pub-list">
 
         <div class="pub-item">
+          <span class="pub-year">2026</span>
+          <div>
+            <span class="pub-tag">Article</span>
+            <p class="pub-title">Partisan and Nonpartisan Models of Constitution-Making</p>
+            <p class="pub-venue"><em>Journal of Politics in Latin America</em> &mdash; with Rodolfo de Camargo Lima</p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://doi.org/10.1177/1866802X251397954" target="_blank">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
           <span class="pub-year">2022</span>
           <div>
             <span class="pub-tag">Article</span>
             <p class="pub-title">Onde está a Polarização Política no Brasil?</p>
+            <p class="pub-title-translation">Where Is Political Polarization in Brazil?</p>
             <p class="pub-venue"><em>Cadernos Adenauer</em></p>
             <div class="pub-links">
-              <a class="pub-link" href="#">Abstract</a>
-              <a class="pub-link" href="papers/polarization.pdf">Download PDF</a>
+              <a class="pub-link" href="papers/polarization.pdf">Download</a>
             </div>
           </div>
         </div>
@@ -301,10 +320,9 @@
             <p class="pub-title">Government and Opposition in Legislative Speechmaking</p>
             <p class="pub-venue"><em>Latin American Politics and Society</em> &mdash; with Maurício Izumi</p>
             <div class="pub-links">
-              <a class="pub-link" href="https://doi.org/10.1017/lap.2020.20" target="_blank">Abstract</a>
-              <a class="pub-link" href="papers/speechmaking.pdf">Download PDF</a>
-              <a class="pub-link" href="#">Supplemental appendix</a>
-              <a class="pub-link" href="#">Replication data</a>
+              <a class="pub-link" href="https://doi.org/10.1017/lap.2020.36" target="_blank">Download</a>
+              <a class="pub-link" href="https://doi.org/10.1017/lap.2021.66" target="_blank">Corrigendum</a>
+              <a class="pub-link" href="papers/speechmaking.pdf">PDF</a>
             </div>
           </div>
         </div>
@@ -316,28 +334,8 @@
             <p class="pub-title">Vote Secrecy With Diverse Voters</p>
             <p class="pub-venue"><em>Comparative Political Studies</em> &mdash; with Daniel W. Gingerich</p>
             <div class="pub-links">
-              <a class="pub-link" href="https://doi.org/10.1177/0010414019897503" target="_blank">Abstract</a>
-              <a class="pub-link" href="papers/vote_secrecy.pdf">Download PDF</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ACCEPTED -->
-    <section class="section">
-      <p class="section-label">Accepted for publication</p>
-      <div class="pub-list">
-
-        <div class="pub-item">
-          <span class="pub-year">2026</span>
-          <div>
-            <span class="pub-tag accepted">Accepted</span>
-            <p class="pub-title">Partisan and Nonpartisan Models of Constitution-Making</p>
-            <p class="pub-venue"><em>Journal of Politics in Latin America</em> &mdash; with Rodolfo de Camargo Lima</p>
-            <div class="pub-links">
-              <a class="pub-link" href="#">Abstract</a>
+              <a class="pub-link" href="http://dx.doi.org/10.1177/0010414019859040" target="_blank">Download</a>
+              <a class="pub-link" href="papers/vote_secrecy.pdf">PDF</a>
             </div>
           </div>
         </div>
@@ -355,7 +353,11 @@
           <div>
             <span class="pub-tag book">Chapter</span>
             <p class="pub-title">Legislatures</p>
-            <p class="pub-venue">In <em>Handbook of Latin American Politics</em>. Edward Elgar &mdash; with Patrick Cunha Silva</p>
+            <p class="pub-venue">
+              In Claudia Avellaneda, Ricardo Bello-Gomez &amp; Nathalie Mendez Mendez (eds.),
+              <em>Handbook of Latin American Politics</em>.
+              Edward Elgar, Cheltenham &mdash; with Patrick Cunha Silva
+            </p>
           </div>
         </div>
 
@@ -364,7 +366,12 @@
           <div>
             <span class="pub-tag book">Chapter</span>
             <p class="pub-title">Government and Congress</p>
-            <p class="pub-venue">In <em>Brazil under Bolsonaro</em>. Ibero-Amerikanisches Institut &mdash; with Fernando Limongi, Andréa Freitas, Joyce Luz</p>
+            <p class="pub-venue">
+              In Peter Birle &amp; Bruno Speck (eds.),
+              <em>Brazil under Bolsonaro: How Endangered Is Democracy?</em>
+              Ibero-Amerikanisches Institut, Berlin, vol. 14, pp. 30–43 &mdash;
+              with Fernando Limongi, Andréa Freitas &amp; Joyce Luz
+            </p>
           </div>
         </div>
 
@@ -373,7 +380,43 @@
           <div>
             <span class="pub-tag book">Chapter</span>
             <p class="pub-title">Estudos Legislativos em Perspectiva Comparada</p>
-            <p class="pub-venue">In <em>Política Comparada: Teoria e Método</em>. ABCP/EdUERJ</p>
+            <p class="pub-title-translation">Legislative Studies in Comparative Perspective</p>
+            <p class="pub-venue">
+              In Perissinotto et al. (eds.),
+              <em>Política Comparada: Teoria e Método</em> [Comparative Politics: Theory and Method].
+              ABCP/EdUERJ, Rio de Janeiro, pp. 281–318 &mdash;
+              with Argelina Figueiredo &amp; Andréa Freitas
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-year">2020</span>
+          <div>
+            <span class="pub-tag book">Chapter</span>
+            <p class="pub-title">Coalizões e Comportamento Legislativo no Brasil (1988–2010)</p>
+            <p class="pub-title-translation">Coalitions and Legislative Behavior in Brazil (1988–2010)</p>
+            <p class="pub-venue">
+              In Rogério Arantes &amp; Lucas Petroni (eds.),
+              <em>A Nova Ciência da Política</em> [The New Political Science].
+              FFLCH/USP, São Paulo, pp. 327–360 &mdash;
+              with Andréa Freitas &amp; Maurício Izumi
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-year">2009</span>
+          <div>
+            <span class="pub-tag book">Chapter</span>
+            <p class="pub-title">Procurando o Centrão: Direita e Esquerda na Assembleia Nacional Constituinte 1987–88</p>
+            <p class="pub-title-translation">Looking for the Center: Right and Left in the National Constituent Assembly 1987–88</p>
+            <p class="pub-venue">
+              In Maria Alice Rezende de Araújo, Cícero Araújo &amp; Júlio Assis Simões (eds.),
+              <em>A Constituição de 1988: Passado e Futuro</em> [The 1988 Constitution: Past and Future].
+              Anpocs/Hucitec, São Paulo, pp. 101–135 &mdash;
+              with Rafael Freitas &amp; Samuel Moura
+            </p>
           </div>
         </div>
 
@@ -385,8 +428,9 @@
   <footer>
     <span class="footer-left">dbmedeiros@ufmg.br &nbsp;·&nbsp; Belo Horizonte, Brazil</span>
     <div class="footer-links">
-      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-      <a href="https://orcid.org" target="_blank">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=SErgSUYAAAAJ&hl=pt-BR" target="_blank">Google Scholar</a>
+      <a href="http://lattes.cnpq.br/6600809862208281" target="_blank">Lattes</a>
+      <a href="https://orcid.org/0000-0003-1642-5444" target="_blank">ORCID</a>
       <a href="https://github.com/dbmedeiros" target="_blank">GitHub</a>
     </div>
   </footer>
